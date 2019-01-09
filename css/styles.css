@@ -3,7 +3,7 @@
 
 body,th,p{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 10px;
 	color: #333;
 	line-height: 1.5;
 }
@@ -12,6 +12,7 @@ body {
 	margin: 0;
 	position:relative;
   max-width: 1200px;
+  min-width: 320px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -44,7 +45,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #footer {
   background-color: #444;
   color: #aaa;
-  font-size: 8pt;
+  font-size: 8px;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
@@ -64,7 +65,7 @@ nav h1 {
 }
 nav h1 a {
   color: #fff;
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: 200;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -135,7 +136,7 @@ nav h1 a {
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
   max-width: 200px;
-  font-size: 10pt;
+  font-size: 12px;
   margin: 0;
   padding: 0;
 }
@@ -172,7 +173,7 @@ nav h1 a {
   box-sizing: border-box;
   margin: 0 0 10px 0;
   width: 100%;
-  min-width: 320px;
+  min-width: 300px;
   padding: 15px;
 }
 
@@ -187,7 +188,7 @@ nav h1 a {
 #restaurants-list li h1 {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 14pt;
+  font-size: 18px;
   font-weight: 200;
   letter-spacing: 0;
   line-height: 1.3;
@@ -199,14 +200,14 @@ nav h1 a {
 #restaurants-list p {
   margin: 0;
   padding: 0;
-  font-size: 11pt;
+  font-size: 12px;
 }
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
-  font-size: 10pt;
+  font-size: 16px;
   margin: 15px 0 0;
   padding: 8px 30px 10px;
   text-align: center;
@@ -242,7 +243,7 @@ nav h1 a {
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 16pt;
+  font-size: 16px;
   font-weight: 200;
   letter-spacing: 0;
   margin: 0;
@@ -256,14 +257,14 @@ nav h1 a {
 }
 
 #restaurant-address {
-  font-size: 12pt;
+  font-size: 12px;
   margin: 10px 0px;
 }
 
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 12pt;
+  font-size: 12px;
   font-weight: 300;
   letter-spacing: 10px;
   margin: 0 0 20px;
@@ -289,10 +290,10 @@ nav h1 a {
 
 #reviews-container h2 {
   color: #f58500;
-  font-size: 16pt;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: -1px;
-  padding-bottom: 1pt;
+  padding-bottom: 1px;
 }
 
 #reviews-list {
@@ -319,7 +320,7 @@ nav h1 a {
   display: inline-block;
   background-color: #333;
   color: #fff;
-  font-size: 16pt;
+  font-size: 16px;
   font-weight: 400;
   margin: 0;
   padding: 10px 20px;
@@ -367,6 +368,9 @@ nav h1 a {
 
 /* ====================== Media Queries ====================== */
 @media only screen and (min-width: 420px) {
+  nav h1 a {
+    font-size: 18px;
+  }
   #map {
     height: 320px;
   }
@@ -382,7 +386,7 @@ nav h1 a {
     padding: 5px 0;
   }
   .filter-options select {
-    font-size: 12pt;
+    font-size: 12px;
     margin: 10px 10px 0 0;
     padding: 0;
   }
@@ -399,6 +403,9 @@ nav h1 a {
 }
 
 @media only screen and (min-width: 520px) {
+  nav h1 a {
+    font-size: 20px;
+  }
   #map {
     height: 340px;
   }
@@ -409,6 +416,9 @@ nav h1 a {
   }
   .filter-options h2 {
     margin: 8px 0 0 15px;
+  }
+  .filter-options select {
+    font-size: 14px;
   }
   #neighborhoods-select {
     width: 175px;
@@ -430,6 +440,9 @@ nav h1 a {
 }
 
 @media only screen and (min-width: 600px) {
+  nav h1 a {
+    font-size: 20px;
+  }
   .inside #map-container {
     width: calc(50% - 40px);
     min-height: 200px;
@@ -438,6 +451,9 @@ nav h1 a {
     overflow: hidden;
     flex: 1;
     order: 2;
+  }
+  #restaurants-list li h1 {
+    font-size: 18px;
   }
   #restaurant-container {
     width: calc(50% - 40px);
@@ -451,18 +467,27 @@ nav h1 a {
 }
 
 @media only screen and (min-width: 720px) {
+  nav h1 a {
+    font-size: 22px;
+  }
   #restaurants-list li {
     width: calc(100%/3 - 20px);
   }
 }
 
 @media only screen and (min-width: 920px) {
+  nav h1 a {
+    font-size: 22px;
+  }
   #restaurants-list li {
     width: calc(100%/4 - 20px);
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  nav h1 a {
+    font-size: 24px;
+  }
   #restaurants-list {
     margin: 0 0 10px -20px;
   }
