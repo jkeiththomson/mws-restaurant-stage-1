@@ -361,15 +361,6 @@ nav h1 a {
   #map {
     height: 260px;
   }
-  #restaurant-name, #reviews-container h2 {
-    font-size: 22px;
-  }
-}
-
-@media only screen and (min-width: 520px) {
-  #map {
-    height: 280px;
-  }
   .filter-options {
     padding: 20px 0;
   }
@@ -380,6 +371,15 @@ nav h1 a {
     display: inline-block;
     float: right;
     margin: 0 15px;
+  }
+  #restaurant-name, #reviews-container h2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  #map {
+    height: 280px;
   }
 }
 
