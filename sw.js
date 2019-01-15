@@ -2,7 +2,7 @@ var cacheName = 'mws-cache-v1';
 
 console.log('This is the service worker script');
 
-// set up cache
+// set up cache when page is first invoked
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName)
@@ -53,12 +53,12 @@ self.addEventListener('fetch', function(event) {
         // response may only be used once, so make a clone that we can return
         let clone = response.clone();
 
-        // put original file into the cache
+        // put original file into the cache...
         caches.open(cacheName).then(function(cache) {
           cache.put(event.request, response);
         });
 
-        // and return the clone
+        // ...and return the clone
         return clone;
 
       }).catch(function () {
