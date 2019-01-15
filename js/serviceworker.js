@@ -1,5 +1,3 @@
-var sw = null;
-
 // only use service worker if Chrome or Firefox -- Safari is problematic
 if (navigator.userAgent.search("Chrome") >= 0 || navigator.userAgent.search("Firefox") >= 0) {
 

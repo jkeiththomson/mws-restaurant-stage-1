@@ -146,9 +146,15 @@ resetRestaurants = (restaurants) => {
  */
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
   const ul = document.getElementById('restaurants-list');
-  restaurants.forEach(restaurant => {
-    ul.append(createRestaurantHTML(restaurant));
-  });
+  if (restaurants.length == 0) {
+    const li = document.createElement('li');
+    li.innerHTML = 'No restaurants found';
+    ul.append(li);
+  } else {
+    restaurants.forEach(restaurant => {
+      ul.append(createRestaurantHTML(restaurant));
+    });
+  }
   addMarkersToMap();
 }
 
