@@ -19,11 +19,11 @@ ul, li {
 	color: #333;
 }
 a {
-	color: orange;
+	color: #ffa500;
 	text-decoration: none;
 }
 a:hover, a:focus {
-	color: #3397db;
+	color: #2172b8;
 	text-decoration: none;
 }
 a img{
@@ -44,7 +44,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #footer {
   width: auto;
   background-color: #444;
-  color: #aaa;
+  color: #bbb;
   font-size: 16px;
   letter-spacing: 1px;
   padding: 25px;
@@ -93,7 +93,7 @@ nav {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-  color: #0275d8;
+  color: #035297;
   text-decoration: none;
 }
 
@@ -107,7 +107,7 @@ nav {
   position: absolute;
   padding: 10px 10px 10px 20px;
   opacity: 0;
-  color: #0275d8;
+  color: #035297;
   background-color: #eee;
   z-index: 100000;
   transition: opacity 0.3s;
@@ -126,7 +126,7 @@ nav {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  background-color: #3397DB;
+  background-color: #2172b8;
   padding: 15px 0;
   margin: 0;
 }
@@ -157,7 +157,7 @@ nav {
 }
 
 .filter-options select:focus {
-  border: 2px solid orange;
+  border: 2px solid #b26100;
   box-shadow: 0 0 8px 4px #fff;
 }
 
@@ -199,7 +199,7 @@ nav {
 }
 
 #restaurants-list li h3 {
-  color: #f18200;
+  color: #b26100;
   font-family: Arial,sans-serif;
   font-size: 22px;
   font-weight: 600;
@@ -217,7 +217,7 @@ nav {
 }
 
 #restaurants-list li a {
-  background-color: orange;
+  background-color: #b26100;
   border: 3px solid #eee;
   color: #fff;
   display: inline-block;
@@ -231,7 +231,7 @@ nav {
 }
 
 #restaurants-list li a:focus {
-  border: 3px solid #3397db;
+  border: 3px solid #2172b8;
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -260,7 +260,7 @@ nav {
 }
 
 #restaurant-name, #reviews-container h2 {
-  color: #f18200;
+  color: #b26100;
   font-family: Arial,sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -351,7 +351,7 @@ nav {
 #reviews-list .review-rating {
   display: inline-block;
   color: white;
-  background-color: orange;
+  background-color: #b26100;
   text-transform: uppercase;
   font-weight: 400;
   padding: 0 10px;
@@ -377,6 +377,11 @@ nav {
   vertical-align: top;
   color: #666;
   min-width: 80px;
+}
+
+/* =================== Mapbox Color Overrides ================ */
+.leaflet-container a {
+  color: #1f70b6;
 }
 
 /* ====================== Media Queries ====================== */
