@@ -26,9 +26,9 @@ This is my solution to the "Restaurant Reviews" project from Udacity's "Front En
 The following features and enhancements have been added to satifsy the project rubric:
 
 ### Responsiveness
-- Fix documenet and viewport declarations in HTML
-- Add media queries to alllow layout to adapt to screen dimensions
-- Tweak margins and padding for readability and design improvements
+- Fix document and viewport declarations in HTML
+- Add media queries and flexboxes to allow layout to adapt to screen dimensions
+- Tweak margins and padding for better readability and design
 - Make restaurant name expand vertically so cards are all the same height
 
 ### Accessibility
@@ -45,12 +45,12 @@ The following features and enhancements have been added to satifsy the project r
 - Display a message when filter results are empty
 
 ### Offline Mode
-- User serviceworker to cacche files for use offfline
+- User serviceworker to cache files for use offfline
 - Restrict use of service worker to Chrome and Firefox
 
 ## Attributions
 
-All the ocode is my own, based ons nippets from the course materials.
+All the new code is my own, based on snippets from the course materials.
 
 ## Contributing
 
